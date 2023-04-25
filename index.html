@@ -46,31 +46,86 @@
     <br><br>
     <section>
         <table border>
+            <caption>Descrição dos serviços e respectivos valores</caption>
             <h2>Taxas e serviços</h2>
             <p>Veja nossas taxas para serviços:</p>
-            <tr>
-                <th>Serviços</th>
-                <th>Valor</th>
-            </tr>
-            <tr>
-                <td>Reserva de Hotel</td>
-                <td>R$ 150,00</td>
-            </tr>
-            <tr>
-                <td>Compra de passagens</td>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <td>Aluguel de Carro</td>
-                <td>R$ 50,00 </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de Hotel</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de Carro</td>
+                    <td>R$ 50,00 </td>
+                </tr>
+            </tbody>
         </table>    
+    </section>
+
+    <section>
+        <h2>Orçamento</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Dados da viagem</legend>
+                <label for="">Nome</label><br>
+                <input type="text" name="nome"><br><br>
+
+                <label for="">E-mail</label><br>
+                <input type="email" required name="email"><br><br>
+
+                <label for="">Data de ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+
+                <label for="">Data de volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+
+                <label for="">Quantidade de pessoas</label><br>
+                <input type="number" name="quantidadePessoa"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                    <label><input type="checkbox" name="passagens" value="Passagens">Compra de passagens <br></label>
+                    <label><input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem <br></label>
+                    <label><input type="checkbox" name="veiculos" value="Veiculo">Rserva de Veiculos <br><br></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label for="">
+                    <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+                    <br><input type="radio" name="formaPagamento" value="boleto">boleto
+                    <br><input type="radio" name="formaPagamento" value="pix"> Pix
+                </label>
+            </fieldset>
+
+<img src="" alt="">
+
+            <label for="">Senha</label><br>
+            <input type="password" name="senha"><br><br>
+
+            <label for="">Comentário</label><br>
+            <textarea name="comentario" id="" cols="30" rows="10"></textarea><br><br>
+
+            <button>Salvar</button>
+
+        </form>
     </section>
 
 
     <footer>
         <p>Desenvolvido por Reginaldo Silva</p>
     </footer>
-   
+   teste
 </body>
 </html>
